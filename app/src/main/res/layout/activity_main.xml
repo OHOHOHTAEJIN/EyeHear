@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+
+    >
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="connection state : "
+            android:textSize="20dp"
+            android:textColor="#003BE9"
+            />
+
+        <TextView
+            android:id="@+id/connection_status_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Not Connected!!!"
+            android:textSize="15dp"
+            android:textColor="#003BE9"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_string_edittext"
+            android:hint="음성인식 결과 표시"
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/send_button"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Send" />
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="420dp">
+        <ImageView
+            android:id="@+id/a_bus_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/dong"/>
+
+        <ListView
+            android:id="@+id/message_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="440dp"
+            android:layout_alignLeft="@id/a_bus_img"
+            android:layout_alignTop="@id/a_bus_img"
+            android:layout_alignRight="@id/a_bus_img"
+            android:layout_alignBottom="@id/a_bus_img"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="-2dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="center" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/sttStart"
+        android:layout_width="422dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="음성인식 시작" />
+
+    <Button
+        android:id="@+id/sttStop"
+        android:layout_width="420dp"
+        android:layout_height="wrap_content"
+        android:text="음성인식 종료" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="===================================="/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/sttSOS"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:backgroundTint="#F50202"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:text="S  O  S" />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
