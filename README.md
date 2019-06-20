@@ -1,7 +1,7 @@
 # EyeHear
-- 소프트웨어 -
-라즈베리파이 환경 구축
-어플리케이션 환경 구축
+- 소프트웨어 -\n
+라즈베리파이 환경 구축\n
+어플리케이션 환경 구축\n
 API 자료조사(STT, GPS, SMS, Map)
 음성인식 API (Google STT) 분석
 GPS API 분석
